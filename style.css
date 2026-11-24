@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7faff;
+    color: #243047;
+}
+
+header {
+    background: #101d3a;
+    padding: 22px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: #54c6ff;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #54c6ff;
+}
+
+.hero {
+    background: linear-gradient(120deg, #101d3a, #1766a3);
+    color: white;
+    padding: 75px 9%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #16a8e0;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #087bb2;
+}
+
+section {
+    padding: 60px 9%;
+    text-align: center;
+}
+
+section h2 {
+    color: #1766a3;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000010;
+    flex: 1 1 210px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px #1766a330;
+}
+
+.emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1766a3;
+    margin-bottom: 12px;
+}
+
+.stats {
+    background: #101d3a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stats h2 {
+    color: #54c6ff;
+    font-size: 35px;
+}
+
+.stats p {
+    color: white;
+}
+
+.team-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    background: #e6f5ff;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #101d3a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
